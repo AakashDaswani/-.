@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAKASH DASWANI PORTFOLIO</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -47,8 +47,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: #1c1c1c;
+            min-height: 100vh;
+            background: #1c1c1c; /* Dark background color */
             padding: 0 20px;
         }
         .home-content {
@@ -78,13 +78,11 @@
             text-decoration: none;
             font-size: 16px;
         }
-        .about,
-        .services,
-        .portfolio,
-        .contact,
-        .footer {
-            padding: 50px 20px;
+        .about-content,
+        .services-container {
             text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
         }
         .about .about-img img,
         .portfolio .portfolio-box img {
@@ -102,6 +100,7 @@
             background: #333;
             color: white;
             padding: 20px;
+            text-align: center;
         }
         .footer .footer-text {
             margin: 0;
@@ -134,14 +133,8 @@
             </div>
             <a href="C:\Users\shrey\Downloads\B.-Software-Engineer.docx" class="btn">Download CV</a>
         </div>
-        <div class="home-img">
-            <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/10/computer_engineer-compare-page.jpg" alt="">
-        </div>
     </section>
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="https://wallpaperaccess.com/full/1385382.jpg" alt="">
-        </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Frontend Developer</h3>
@@ -256,5 +249,3 @@
     </script>
 </body>
 </html>
-
-
