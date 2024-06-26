@@ -13,7 +13,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #1c1c4f; /* Dark blue background color */
+            background-color: #1c1c1c; /* Dark background color */
             color: white;
         }
         .header {
@@ -48,7 +48,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: #1c1c4f; /* Dark blue background color */
+            background: #1c1c1c;
             padding: 0 20px;
         }
         .home-content {
@@ -203,4 +203,56 @@
                 <img src="myproject/image/kevin-canlas-QYHehJ9Iovs-unsplash.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Cab Booking</h4>
-                    <p>In this project, we can book a cab using Java.</p
+                    <p>In this project, we can book a cab using Java.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>ME!</span></h2>
+        <form action="#" name="submit-to-google-sheet">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name">
+                <input type="email" name="Email Address" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="Mobile Number" placeholder="Mobile Number">
+                <input type="text" name="Email Subject" placeholder="Email Subject">
+            </div>
+            <textarea name="Your Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        <span id="msg"></span>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Aakash Daswani | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+</html>
