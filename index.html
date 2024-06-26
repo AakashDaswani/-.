@@ -13,9 +13,11 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+                background-color: #1c1c1c; /* Dark background color */
+                color: white;
             }
             .header {
-                background: limegreen;
+                background: #333;
                 color: white;
                 display: flex;
                 justify-content: space-between;
@@ -36,8 +38,8 @@
             }
             .header .navbar a:hover,
             .header .navbar a.active {
-                background: white;
-                color: limegreen;
+                background: limegreen;
+                color: white;
                 border-radius: 4px;
             }
             .home {
@@ -45,16 +47,18 @@
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-                background: #f1f1f1;
+                background: #1c1c1c;
                 padding: 0 20px;
             }
             .home-content {
                 text-align: center;
             }
             .home-content h3,
-            .home-content h1,
-            .home-content h3 span {
+            .home-content h1 {
                 margin: 10px 0;
+                color: white;
+            }
+            .home-content h3 span {
                 color: limegreen;
             }
             .home-content .social-media a {
@@ -94,7 +98,7 @@
                 text-decoration: none;
             }
             .footer {
-                background: limegreen;
+                background: #333;
                 color: white;
                 padding: 20px;
             }
@@ -118,7 +122,7 @@
         </header>
         <section class="home" id="home">
             <div class="home-content">
-                <h3>Hello, It's Me</h3>
+                <h3>Hello, It's me</h3>
                 <h1>Aakash Daswani</h1>
                 <h3>And I'm a <span class="multiple-text"></span></h3>
                 <div class="social-media">
@@ -203,48 +207,4 @@
         </section>
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>ME!</span></h2>
-            <form action="#" name="submit-to-google-sheet">
-                <div class="input-box">
-                    <input type="text" name="Name" placeholder="Full Name">
-                    <input type="email" name="Email Address" placeholder="Email Address">
-                </div>
-                <div class="input-box">
-                    <input type="number" name="Mobile Number" placeholder="Mobile Number">
-                    <input type="text" name="Email Subject" placeholder="Email Subject">
-                </div>
-                <textarea name="Your Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
-            <span id="msg"></span>
-        </section>
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2023 by Aakash Daswani | All Rights Reserved.</p>
-            </div>
-            <div class="footer-iconTop">
-                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-            </div>
-        </footer>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="script.js"></script>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg = document.getElementById("msg")
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function() {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-        </script>
-    </body>
-</html>
+            <form action="#" name="
