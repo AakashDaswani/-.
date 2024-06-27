@@ -45,7 +45,7 @@ ScrollReveal().reveal('.home-content h1,.about-img',{origin:'left'});
 ScrollReveal().reveal('.home-content p,.about-content',{origin:'right'});
 
 const typed = new Typed('.multiple-text',{
-    strings:['Future CFA Holder', 'Accountant','Data Analyst '],
+    strings:['Future CFA Holder', 'Future Accountant','Future Data Analyst ','Future Economist'],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
