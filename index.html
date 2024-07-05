@@ -143,12 +143,10 @@
                 <div class="portfolio-layer">
                     <h4>Andy Foresight</h4>
                     <p>No clue lmao.</p>
-                    <a href="#" onclick="openIframe('experience/Digicel.html')" title="Project Details">
-  <i class="bx bx-link-external"></i>
-</a>
+                   
                 </div>
             </div>
-        <div class="portfolio-box">
+        <div class="portfolio-box" data-toggle="modal" data-target="#portfolioModalBoeing">
                 <img src="myproject/image/Digicel.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>Digicel</h4>
@@ -266,5 +264,84 @@
                 .catch(error => console.error('Error!', error.message));
         });
     </script>
+    <!-- Portfolio Modal: Boeing-->
+        <div class="portfolio-modal modal fade" id="portfolioModalBoeing" tabindex="-1" role="dialog" aria-labelledby="portfolioModalBoeingLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModalBoeingLabel">Boeing</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                     <img class="img-fluid rounded mb-5" src="myproject/image/Digicel.jpeg" alt="" /> 
+                                    <!-- Portfolio Modal - Text-->
+                                    <!-- <p>Boeing is a free-to-play turn-based strategy game focused on economy and warfare. It is set in a big part of a fictional world called Boeing, containing it's two main continents.</p>
+                                    <br>
+                                    <p>The player must lead their people to the ultimate victory, by raising the country’s economy and expanding its territories using military force. The enemies will share the same dream and will not give up their territories easily, challenging tactical scenarios that the player must overcome.</p>
+                                    <br>
+                                    <p>The player has at its disposal an array of units and buildings that can be created, each being specific to the faction’s culture.</p> -->
+                                    
+                                          <p>Point 1 - Experience Info</p>
+                                          <p>Point 2:                                   hi       </p>
+                                          <p>Point 3 __________</p>
+                                    
+                                    <!-- <div class="row">
+                                        <div class="col-lg-4 col-md-6 text-center">
+                                            <div class="feature-box">
+                                                <i class="fas fa-4x fa-chess-rook"></i>
+                                                <h3>Strategy</h3>
+                                                <p class="text-muted">Offers a classic 4x turn-based strategy game experience</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 text-center">
+                                            <div class="feature-box">
+                                                <i class="fas fa-4x fa-expand"></i>
+                                                <h3>Expandable</h3>
+                                                <p class="text-muted">Supports customized worlds that can offer a whole new experience, and offers Involvements to aid in their creation</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 text-center">
+                                            <div class="feature-box">
+                                                <i class="fas fa-4x fa-spinner"></i>
+                                                <h3>In-dev</h3>
+                                                <p class="text-muted">This project is in a continuous state of development and improvement</p>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                   <!-- <div class="text-center mt-4">
+                                        <a class="btn btn-lg btn-outline-dark" href="https://github.com/hmlendea/Boeing">
+                                            <i class="fab fa-fw fa-github"></i>Source
+                                        </a>
+                                    </div>
+                                    <br>
+                                    <ul class="list-inline item-details">
+                                        <li>Language: <strong>C#, XML</strong></li>
+                                        <li>Technologies: <strong>.NET Core, XNA/MonoGame</strong></li>
+                                        <li>Operating Systems: <strong>Windows, Mac, Linux</strong></li>
+                                    </ul>
+                                    <br>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 </body>
 </html>
